@@ -1,0 +1,71 @@
+-Git workflow
+  175  mkdir task4
+  176  cd task4
+  177  git init
+  178  touch master.txt
+  179  git branch
+  180  git add . && git commit -m "1st commit"
+  181  git branch
+  182  git branch
+  183  git checkout -b test
+  184  git branch f1
+  185  git branch f2
+  186  git branch
+  187  history
+  188  git branch
+  189  git checkout f1
+  190  touch file1
+  191  git add . && git commit -m "new"
+  192  git checkout f2
+  193  touch file2
+  194  git add . && git commit -m "new file commit"
+  195  git checkout test
+  196  ls
+  197  git merge f1
+  198  git merge f2
+  199  ls
+  200  clear
+  201  ls
+  202  git branch
+  203  git checkout master
+  204  ls
+  205  git merge test
+  206  ls
+  207  ls
+  208  git branch
+  209  git branch hotfix
+  210  git checkout hotfix
+  211  touch file3
+  212  git add . && git commit -m "new hotfix commit"
+  213  git checkout master
+  214  ls
+  215  git merge hotfix
+  216  ls
+  217  history
+
+-Git mergeconflict
+
+ 220  cd task5
+  221  git init
+  222  touch fileA
+  223  git add . && git commit -m "master branch original"
+  224  git checkout -b test
+  225  git branch
+  226  ls
+  227  git branch
+  228  l
+  229  ls
+  230  nano fileA
+  231  git add . && git commit -m "test branch edited fileA"
+  232  git checkout master
+  233  ls
+  234  nano fileA
+  235  git add . && git commit -m "master edited fileA"
+  236  history
+  237  git branch
+  238  git merge test
+  239  nano fileA
+  240  git add . && git commit -m "conflict resolved"
+  241  history
+
+-git push, pull and clone
